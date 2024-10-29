@@ -37,8 +37,9 @@ form{
      form{
       display:block;
       flex-direction:center;
-      width:350px;
+      width:400px;
       margin-top:40px;
+      padding:5px;
      }
      .edit{
       height:80px;
