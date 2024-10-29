@@ -1,0 +1,41 @@
+form{
+    border:2px solid black;
+    padding:25px;
+    margin:auto;
+    height:auto;
+    width:500px;
+    
+  }
+  .info{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:20px;
+  }
+  .edit{
+    height:100px;
+    width:450px;
+  }
+  #button1{
+    background-color:yellowgreen;
+    color:black;
+    border:none;
+    padding:7px;
+    margin:10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:15px;
+    }
+    #button1:hover{
+      border-radius:10px 12px;
+    }
+    @media screen and (max-width:500px)
+    {
+     #button1{
+      display:block;
+     }  
+     form{
+      display:block;
+      flex-direction:center;
+      padding:8px;
+     }
+    }

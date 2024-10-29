@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 29</title>
+  <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <form>
+   <label for="input" class="info">Enter a String Here:</label>
+   <input type="text" id="input" name="input" class="edit">
+   <br>
+   <br>
+   <br>
+   <label for="output" class="info">Output of a String:</label>
+   <input type="text" id="output" name="output" class="edit">
+   <br>
+   <br>
+   <button type="button" id="button1" name="button"  onclick="CovertUpperCase()">Uppercase</button>
+   <button type="button" id="button1" name="button"  onclick="CovertLowerCase()">LowerCase</button>
+   <button type="button" id="button1" name="button"  onclick="WordCount()">WordCount</button>
+   <button type="button" id="button1" name="button"  onclick="CharacterCount()">CharacterCount</button>
+   
+   
+
+   <script>
+    const inputElement=document.getElementById('input');
+    const outputElement=document.getElementById('output');
+
+    function CovertUpperCase(){
+      outputElement.value=inputElement.value.toUpperCase();
+    }
+    function CovertLowerCase(){
+      outputElement.value=inputElement.value.toLowerCase();
+    }
+    function WordCount(){
+      outputElement.value = inputElement.value.trim().split(' ').length;
+    }
+    function CharacterCount(){
+      outputElement.value=inputElement.value.length;
+    }
+   </script>
+</body>
+</html>
